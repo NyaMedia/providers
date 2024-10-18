@@ -29,7 +29,7 @@ export const twoEmbedScraper = makeSourcerer({
   id: '2embed',
   name: '2Embed',
   rank: 140,
-  disabled: false,
+  disabled: true,
   flags: [flags.CORS_ALLOWED],
   scrapeMovie: comboScraper,
   scrapeShow: comboScraper,
