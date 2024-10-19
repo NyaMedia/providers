@@ -1,4 +1,4 @@
-import { makeProviders, makeSimpleProxyFetcher, makeStandardFetcher, targets } from '../../../lib';
+import { makeProviders, makeSimpleProxyFetcher, makeStandardFetcher, targets } from '@/index';
 
 (window as any).scrape = (proxyUrl: string, type: 'source' | 'embed', input: any) => {
   const providers = makeProviders({
