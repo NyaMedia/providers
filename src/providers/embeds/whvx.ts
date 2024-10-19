@@ -40,7 +40,7 @@ function embed(provider: { id: string; rank: number }) {
       if (provider.id === 'nova') {
         throw new NotFoundError('Failed to search');
       }
-      
+
       try {
         const search = await ctx.fetcher.full(
           `${baseUrl}/search?query=${encodeURIComponent(ctx.url)}&provider=${provider.id}`,
